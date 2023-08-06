@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    {# This is the base template for the site–other templates extend this one #}
+    
+    <meta charset="utf-8" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="The Forum Helpers" />
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+    {% seo "" %}
+  </head>
+  <body>
+  <main>
+      <header class="footer">
+        <p>
+          The Forum Helpers
+        </p>
+        <div class="links">
+          <a href="/">Home</a>
+          <span class="divider">|</span>
+          <a href="/members">Members</a>
+          <span class="divider">|</span>
+          <a href="/apply">Apply</a>
+        </div>
+      </header>
+    {# Page or post content will appear here #}
+  
+    {{ content | safe }}
+
+
+    <footer>
+      <hr>
+      <p style="text-align: center;">
+        This website is maintained by The Forum Helpers, a studio on Scratch. This website was built from a Glitch 11ty blog template.
+      </p>
+    </footer>
+  </main>
+   
+  </body>
+</html>
